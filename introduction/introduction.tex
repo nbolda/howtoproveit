@@ -17,11 +17,44 @@
 
 \mysection{0}{Introduction}
 
-\begin{Problem 0.0 \#1a}
+\begin{problem}{Problem 0.0 \#1a}
     Factor \(2^{15} - 1=32,767\) into a product of two smaller positive integers. \\
     
-    Solution:
+    Solution: \\
+        2^n-1=32,767 \\
+        n = a \cdot b 
         
+    \begin{align}
+    % Line 1
+        x = 2^b-1 
+    % note that the & tells LaTeX where to line things up
+    % the \\ tells LaTeX to start a new line
+            &\Rightarrow x = 2^5-1 \\
+    % Line 2
+            &\Rightarrow x = 32 - 1\\
+    % Line 3
+            &\Rightarrow x = 31\\
+    \end{align}
+
+    \begin{align}
+    % Line 1
+        y = 1+2^b+2^{2b}
+    % note that the & tells LaTeX where to line things up
+    % the \\ tells LaTeX to start a new line
+            &\Rightarrow y = 1+2^5+2^{10}\\
+    % Line 2
+            &\Rightarrow y = 1+32+1024\\
+    % Line 3
+            &\Rightarrow y = 1057\\
+    \end{align}
+        
+\end{problem}
+
+\begin{problem}{Problem 0.0 \#1b}
+    Find an integer x such that \(1 < x < 2^{32,767}-1\) is divisible x. \\
+
+    Solution:
+    
 \end{problem}
 
 \end{document}

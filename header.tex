@@ -8,6 +8,7 @@
     outer=0.5in
 ]{geometry}
 \pagestyle{myheadings}
+
 %%%% Additional Commands to Load %%%%
 \usepackage{tcolorbox}
 \tcbuselibrary{skins}
@@ -20,6 +21,7 @@
 \usepackage{titling}
 \usepackage{mathrsfs}
 \usepackage{calc}
+
 %%%% Commands to Define Homework Boxes %%%%
 %%%% Box Definition %%%%
 \newtcolorbox{prob}[1]{        
@@ -38,8 +40,10 @@
     },
     fonttitle=\large\bfseries
 }
+
 %%%% Command to Change Section Number %%%%
 \newcommand{\mysection}[2]{\setcounter{section}{#1}\addtocounter{section}{-1}\section{#2}}
+
 %%%% Environment Definition %%%%
 \newenvironment{problem}[1]{
     \begin{prob}{#1}
